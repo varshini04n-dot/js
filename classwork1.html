@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+</head>
+<body style="background-color: rgb(236, 172, 172);">
+<h1 style="text-align: center;background-color: aqua;">Online Shop</h1>
+<p id="demo"> </p>
+<p id="demo1"> </p>
+   <script>
+var tsold=5;
+var tprice=400;
+var csold=3;
+var cprice=150;
+
+document.getElementById("demo").innerHTML="The total earning : "+ (tsold*tprice+csold*cprice);
+tprice=450;
+document.getElementById("demo1").innerHTML="Recalculate the price : "+(tsold*tprice+csold*cprice);
+   </script> 
+</body>
+</html>
