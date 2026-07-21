@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <script>
+        let contact1={
+            name:"Max",
+            phone:7767837383,
+            email:"max_ians@gmail.com",
+            getInfo:function(){return "Name is "+this.name+" ,Phone number is "+this.phone+" ,Email is "+this.email } 
+        };
+        let contact2={
+            name:"Steve",
+            phone:77667596888,
+            email:"steve_hariden@gmail.com",
+            getInfo:function(){return "Name is "+this.name+", Phone number is "+this.phone+", Email is "+this.email } 
+        };
+       function printContactInfo(contact){
+            console.log(contact.getInfo());
+
+       }
+       printContactInfo(contact1);
+        printContactInfo(contact2);
+       
+        
+          
+    </script>
+</body>
+</html>
