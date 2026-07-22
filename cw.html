@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+</head>
+<body>
+    <input type="text" id="demo">
+    
+    <button onclick="myfunc()">Sumbit</button>
+    <p id="a"> </p>
+</body>
+
+<script>
+    function myfunc(){
+        var feedback="  I loved the FOOD and the service!  "
+      var trimmed=feedback.trim();
+      var lower=trimmed.toLowerCase();
+      var txt=lower.replace("food","ambience");
+      var pos=txt.indexOf("service");
+      var spi=txt.split(" ");
+      document.getElementById("a").innerHTML="The trimmed value : "+trimmed+"<br>"+"The Lower Case : "+lower+"<br>"+"Replaced : "+txt+"<br>"+"Position : "+pos+"<br>"+"Array : "+spi;
+
+
+      
+        
+    
+
+    }
+</script>
+</html>
